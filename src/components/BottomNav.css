@@ -1,0 +1,84 @@
+.bottom-nav {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 50;
+    background: rgba(16, 22, 34, 0.98);
+    backdrop-filter: blur(16px);
+    border-top: 1px solid var(--color-border);
+    padding-bottom: env(safe-area-inset-bottom);
+}
+
+.nav-items {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 64px;
+    padding: 0 var(--space-2);
+}
+
+.nav-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-1);
+    width: 64px;
+    height: 100%;
+    background: transparent;
+    border: none;
+    color: var(--color-text-muted);
+    cursor: pointer;
+    transition: color var(--transition-fast);
+    -webkit-tap-highlight-color: transparent;
+}
+
+.nav-item span {
+    font-size: 10px;
+    font-weight: var(--font-weight-medium);
+}
+
+.nav-item.active {
+    color: var(--color-accent-primary);
+}
+
+.nav-item:not(.active):hover {
+    color: var(--color-text-secondary);
+}
+
+.nav-item:active {
+    transform: scale(0.9);
+}
+
+/* Download FAB on Preview page */
+.download-fab {
+    position: absolute;
+    top: -28px;
+    right: var(--space-4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 56px;
+    height: 56px;
+    background: var(--color-accent-primary);
+    border: none;
+    border-radius: var(--radius-full);
+    color: white;
+    cursor: pointer;
+    box-shadow: var(--shadow-primary);
+    transition: all var(--transition-fast);
+}
+
+.download-fab:hover {
+    background: var(--color-accent-secondary);
+}
+
+.download-fab:active {
+    transform: scale(0.95);
+}
+
+.download-fab:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}

@@ -1,0 +1,89 @@
+.quick-edit-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    padding: var(--space-4);
+    backdrop-filter: blur(4px);
+    animation: fadeIn 0.15s ease-out;
+}
+
+.quick-edit-modal {
+    background: var(--color-bg-secondary);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-xl);
+    width: 100%;
+    max-width: 400px;
+    max-height: 80vh;
+    overflow: hidden;
+    animation: slideUp 0.2s ease-out;
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.quick-edit-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: var(--space-4);
+    border-bottom: 1px solid var(--color-border);
+}
+
+.quick-edit-header h3 {
+    font-size: var(--font-size-lg);
+    font-weight: var(--font-weight-semibold);
+    margin: 0;
+}
+
+.quick-edit-content {
+    padding: var(--space-4);
+}
+
+.quick-edit-content input,
+.quick-edit-content textarea {
+    width: 100%;
+    padding: var(--space-3);
+    background: var(--color-bg-primary);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-lg);
+    color: var(--color-text-primary);
+    font-size: var(--font-size-base);
+    font-family: inherit;
+    resize: vertical;
+}
+
+.quick-edit-content input:focus,
+.quick-edit-content textarea:focus {
+    outline: none;
+    border-color: var(--color-accent-primary);
+    box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.1);
+}
+
+.quick-edit-content textarea {
+    min-height: 100px;
+}
+
+.quick-edit-actions {
+    display: flex;
+    gap: var(--space-2);
+    padding: var(--space-4);
+    border-top: 1px solid var(--color-border);
+    justify-content: flex-end;
+}
+
+.quick-edit-actions .btn {
+    padding: var(--space-2) var(--space-4);
+}

@@ -1,0 +1,223 @@
+.form-section {
+    /* Base form section */
+}
+
+.form-intro {
+    color: var(--color-text-muted);
+    font-size: var(--font-size-sm);
+    margin-bottom: var(--space-6);
+    line-height: var(--line-height-relaxed);
+}
+
+/* Form Grid */
+.form-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-4);
+}
+
+@media (max-width: 600px) {
+    .form-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.form-group.full-width {
+    grid-column: 1 / -1;
+}
+
+/* Empty State */
+.empty-state {
+    text-align: center;
+    padding: var(--space-10);
+    background: var(--color-bg-secondary);
+    border: 2px dashed var(--color-border);
+    border-radius: var(--radius-xl);
+}
+
+.empty-state p {
+    color: var(--color-text-muted);
+    margin-bottom: var(--space-4);
+}
+
+/* Entry Cards */
+.entries-list {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-4);
+}
+
+.entry-card {
+    background: var(--color-bg-secondary);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    transition: border-color var(--transition-fast);
+}
+
+.entry-card:hover {
+    border-color: var(--color-text-muted);
+}
+
+.entry-header {
+    display: flex;
+    align-items: center;
+    gap: var(--space-3);
+    padding: var(--space-4);
+    cursor: pointer;
+    user-select: none;
+}
+
+.entry-drag {
+    color: var(--color-text-muted);
+    cursor: grab;
+}
+
+.entry-summary {
+    flex: 1;
+    min-width: 0;
+}
+
+.entry-summary h4 {
+    font-size: var(--font-size-base);
+    font-weight: var(--font-weight-medium);
+    margin-bottom: var(--space-1);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.entry-summary p {
+    font-size: var(--font-size-sm);
+    color: var(--color-text-muted);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.entry-actions {
+    display: flex;
+    align-items: center;
+    gap: var(--space-2);
+    color: var(--color-text-muted);
+}
+
+.entry-content {
+    padding: 0 var(--space-4) var(--space-4);
+    border-top: 1px solid var(--color-border);
+    padding-top: var(--space-4);
+    animation: slideUp 0.2s ease-out;
+}
+
+/* Responsibilities */
+.responsibilities-list {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-2);
+    margin-bottom: var(--space-3);
+}
+
+.responsibility-item {
+    display: flex;
+    align-items: center;
+    gap: var(--space-2);
+}
+
+.responsibility-item .bullet {
+    color: var(--color-accent-primary);
+    font-size: var(--font-size-lg);
+    flex-shrink: 0;
+}
+
+.responsibility-item input {
+    flex: 1;
+}
+
+.add-resp-btn {
+    margin-top: var(--space-2);
+}
+
+.add-entry-btn {
+    width: 100%;
+    justify-content: center;
+}
+
+/* Checkbox */
+.checkbox-label {
+    display: flex;
+    align-items: center;
+    gap: var(--space-2);
+    font-size: var(--font-size-sm);
+    color: var(--color-text-secondary);
+    cursor: pointer;
+    margin-top: var(--space-2);
+}
+
+.checkbox-label input[type="checkbox"] {
+    width: auto;
+    accent-color: var(--color-accent-primary);
+}
+
+/* Skills Form */
+.skill-section {
+    margin-bottom: var(--space-8);
+}
+
+.skill-section h3 {
+    font-size: var(--font-size-lg);
+    font-weight: var(--font-weight-semibold);
+    margin-bottom: var(--space-3);
+}
+
+.tags-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-2);
+    margin-bottom: var(--space-3);
+    min-height: 40px;
+}
+
+.tag-input-container {
+    display: flex;
+    gap: var(--space-2);
+}
+
+.tag-input-container input {
+    flex: 1;
+}
+
+.skill-suggestions {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: var(--space-2);
+    margin-top: var(--space-3);
+}
+
+.suggestion-label {
+    font-size: var(--font-size-xs);
+    color: var(--color-text-muted);
+}
+
+.suggestion-tag {
+    padding: var(--space-1) var(--space-2);
+    font-size: var(--font-size-xs);
+    background: var(--color-bg-tertiary);
+    border: 1px dashed var(--color-border);
+    border-radius: var(--radius-full);
+    color: var(--color-text-muted);
+    cursor: pointer;
+    transition: all var(--transition-fast);
+}
+
+.suggestion-tag:hover {
+    background: var(--color-accent-primary);
+    border-color: var(--color-accent-primary);
+    color: white;
+}
+
+/* Textarea styling */
+textarea {
+    resize: vertical;
+    min-height: 80px;
+}

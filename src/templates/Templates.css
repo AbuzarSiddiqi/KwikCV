@@ -1,0 +1,541 @@
+/* ========================================
+   ATS-OPTIMIZED RESUME TEMPLATES
+   Exact LaTeX Replica - Professional Format
+   ======================================== */
+
+/* Base Template - Letter Size 8.5" x 11" */
+.template {
+    width: 8.5in;
+    min-height: 11in;
+    padding: 0.5in 0.6in;
+    background: #ffffff;
+    color: #000000;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 10.5pt;
+    line-height: 1.35;
+    box-sizing: border-box;
+    margin: 0;
+    /* Force left alignment and isolate from parent styles */
+    text-align: left;
+    isolation: isolate;
+}
+
+/* ============================================================
+   SHAKRA TEMPLATE - Exact LaTeX sample.sty Replica
+   Professional Data Analyst / Business Resume
+   ============================================================ */
+
+.shakra-template {
+    background: #ffffff;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 10.5pt;
+    text-align: left;
+}
+
+/* ---- HEADER ---- */
+.shakra-header {
+    text-align: center;
+    margin-bottom: 8pt;
+}
+
+.shakra-name {
+    font-size: 26pt;
+    font-weight: 400;
+    font-variant: small-caps;
+    letter-spacing: 2px;
+    margin: 0 0 3pt 0;
+    color: #000000;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+}
+
+.shakra-title {
+    font-size: 12pt;
+    font-weight: 700;
+    margin: 0 0 5pt 0;
+    color: #000000;
+}
+
+.shakra-contact {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2pt 20pt;
+    font-size: 9.5pt;
+    color: #000000;
+}
+
+.shakra-contact span {
+    white-space: nowrap;
+}
+
+/* ---- SECTIONS ---- */
+.shakra-section {
+    margin-bottom: 8pt;
+    text-align: left;
+}
+
+.shakra-section-title {
+    font-size: 11pt;
+    font-weight: 700;
+    font-variant: small-caps;
+    letter-spacing: 0.5px;
+    margin: 0 0 3pt 0;
+    padding-bottom: 1pt;
+    border-bottom: 0.5pt solid #000000;
+    color: #000000;
+    text-align: left;
+}
+
+/* ---- SUMMARY ---- */
+.shakra-summary {
+    font-size: 10.5pt;
+    line-height: 1.45;
+    text-align: justify;
+    margin: 2pt 0 0 0;
+    color: #000000;
+}
+
+/* ---- SKILLS ---- */
+.shakra-skills {
+    margin-top: 2pt;
+    text-align: left;
+}
+
+.shakra-skill-row {
+    font-size: 10.5pt;
+    margin: 0 0 2pt 0;
+    line-height: 1.4;
+    color: #000000;
+    text-align: left;
+}
+
+.shakra-skill-row strong {
+    font-weight: 700;
+}
+
+/* ---- EXPERIENCE ---- */
+.shakra-exp-item {
+    margin-bottom: 10pt;
+    text-align: left;
+}
+
+.shakra-exp-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 1pt;
+}
+
+.shakra-exp-left {
+    flex: 1;
+}
+
+.shakra-exp-right {
+    text-align: right;
+    flex-shrink: 0;
+    margin-left: 10pt;
+}
+
+.shakra-exp-title {
+    font-size: 11pt;
+    font-weight: 700;
+    margin: 0;
+    color: #000000;
+}
+
+.shakra-exp-company {
+    font-size: 10pt;
+    font-style: italic;
+    margin: 0;
+    color: #000000;
+}
+
+.shakra-exp-date {
+    font-size: 10.5pt;
+    font-weight: 700;
+    white-space: nowrap;
+    color: #000000;
+}
+
+.shakra-exp-tools {
+    font-size: 9.5pt;
+    font-style: italic;
+    color: #000000;
+    margin-top: 0;
+}
+
+/* ---- BULLET LISTS (Experience & Projects) ---- */
+.shakra-bullets {
+    margin: 3pt 0 0 0;
+    padding: 0 0 0 12pt;
+    list-style: none;
+    text-align: left;
+}
+
+.shakra-bullets li {
+    font-size: 10.5pt;
+    margin-bottom: 2pt;
+    line-height: 1.4;
+    text-align: left;
+    position: relative;
+    color: #000000;
+    padding-left: 4pt;
+}
+
+.shakra-bullets li::before {
+    content: "–";
+    position: absolute;
+    left: -10pt;
+    color: #000000;
+}
+
+/* ---- CERTIFICATIONS LIST (with bullets) ---- */
+.shakra-cert-list {
+    margin: 3pt 0 0 0;
+    padding: 0 0 0 16pt;
+    list-style: disc;
+    text-align: left;
+}
+
+.shakra-cert-list li {
+    font-size: 10.5pt;
+    margin-bottom: 3pt;
+    line-height: 1.4;
+    color: #000000;
+    text-align: left;
+}
+
+.shakra-cert-list li strong {
+    font-weight: 700;
+}
+
+/* ---- PROJECTS ---- */
+.shakra-project-item {
+    margin-bottom: 10pt;
+    text-align: left;
+}
+
+.shakra-project-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 1pt;
+}
+
+.shakra-project-name {
+    font-size: 10.5pt;
+    margin: 0;
+    color: #000000;
+}
+
+.shakra-project-name strong {
+    font-weight: 700;
+}
+
+.shakra-project-name em {
+    font-style: italic;
+}
+
+.shakra-project-date {
+    font-size: 10.5pt;
+    font-weight: 700;
+    white-space: nowrap;
+    color: #000000;
+}
+
+/* ---- EDUCATION ---- */
+.shakra-edu-item {
+    margin-bottom: 6pt;
+    text-align: left;
+}
+
+.shakra-edu-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.shakra-edu-left {
+    flex: 1;
+}
+
+.shakra-edu-right {
+    text-align: right;
+    flex-shrink: 0;
+    margin-left: 10pt;
+}
+
+.shakra-edu-degree {
+    font-size: 11pt;
+    font-weight: 700;
+    margin: 0;
+    color: #000000;
+}
+
+.shakra-edu-school {
+    font-size: 10pt;
+    font-style: italic;
+    margin: 0;
+    color: #000000;
+}
+
+.shakra-edu-date {
+    font-size: 10.5pt;
+    font-weight: 700;
+    color: #000000;
+}
+
+.shakra-edu-gpa {
+    font-size: 10pt;
+    font-style: italic;
+    color: #000000;
+}
+
+/* ============================================================
+   ASHISH TEMPLATE - Tech Professional Resume
+   Skills-first, clean, ATS-optimized for Software Engineers
+   ============================================================ */
+
+.ashish-template {
+    background: #ffffff;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 10.5pt;
+    text-align: left;
+}
+
+/* ---- HEADER ---- */
+.ashish-header {
+    text-align: center;
+    margin-bottom: 10pt;
+}
+
+.ashish-name {
+    font-size: 28pt;
+    font-weight: 400;
+    letter-spacing: 1px;
+    margin: 0 0 6pt 0;
+    color: #000000;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.ashish-contact {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2pt 18pt;
+    font-size: 9.5pt;
+    color: #000000;
+}
+
+.ashish-contact span {
+    white-space: nowrap;
+}
+
+/* ---- SECTIONS ---- */
+.ashish-section {
+    margin-bottom: 10pt;
+    text-align: left;
+}
+
+.ashish-section-title {
+    font-size: 11pt;
+    font-weight: 700;
+    font-variant: small-caps;
+    letter-spacing: 0.5px;
+    margin: 0 0 4pt 0;
+    padding-bottom: 1pt;
+    border-bottom: 0.5pt solid #000000;
+    color: #000000;
+    text-align: left;
+}
+
+/* ---- SKILLS ---- */
+.ashish-skills {
+    margin-top: 2pt;
+    text-align: left;
+}
+
+.ashish-skills p {
+    font-size: 10.5pt;
+    margin: 0 0 2pt 0;
+    line-height: 1.4;
+    color: #000000;
+    text-align: left;
+}
+
+.ashish-skills strong {
+    font-weight: 700;
+}
+
+/* ---- EXPERIENCE ---- */
+.ashish-exp-item {
+    margin-bottom: 10pt;
+}
+
+.ashish-exp-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 1pt;
+}
+
+.ashish-exp-company {
+    font-size: 11pt;
+    font-weight: 700;
+    margin: 0;
+    color: #000000;
+}
+
+.ashish-exp-title {
+    font-size: 10pt;
+    font-style: italic;
+    margin: 0;
+    color: #000000;
+}
+
+.ashish-exp-dates {
+    font-size: 10.5pt;
+    text-align: right;
+    flex-shrink: 0;
+    margin-left: 10pt;
+    white-space: nowrap;
+    color: #000000;
+}
+
+/* ---- BULLET LISTS ---- */
+.ashish-bullet-list {
+    margin: 3pt 0 0 0;
+    padding: 0 0 0 16pt;
+    list-style: disc;
+}
+
+.ashish-bullet-list li {
+    font-size: 10.5pt;
+    margin-bottom: 2pt;
+    line-height: 1.4;
+    color: #000000;
+}
+
+.ashish-tech-stack {
+    font-size: 9.5pt;
+    margin: 3pt 0 0 0;
+    font-style: italic;
+    color: #000000;
+}
+
+/* ---- EDUCATION ---- */
+.ashish-edu-item {
+    margin-bottom: 8pt;
+}
+
+.ashish-edu-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.ashish-edu-school {
+    font-size: 11pt;
+    font-weight: 700;
+    margin: 0;
+    color: #000000;
+}
+
+.ashish-edu-degree {
+    font-size: 10pt;
+    font-style: italic;
+    margin: 0;
+    color: #000000;
+}
+
+.ashish-edu-dates {
+    text-align: right;
+    font-size: 10.5pt;
+    flex-shrink: 0;
+    margin-left: 10pt;
+    color: #000000;
+}
+
+.ashish-coursework {
+    font-size: 9.5pt;
+    margin: 2pt 0 0 0;
+    line-height: 1.4;
+    color: #000000;
+}
+
+.ashish-coursework strong {
+    font-weight: 700;
+}
+
+/* ---- PROJECT ---- */
+.ashish-project-item {
+    margin-bottom: 6pt;
+}
+
+.ashish-project-header {
+    margin-bottom: 1pt;
+}
+
+.ashish-project-title {
+    font-size: 10.5pt;
+    margin: 0;
+    color: #000000;
+}
+
+.ashish-project-title strong {
+    font-weight: 700;
+}
+
+.ashish-project-desc {
+    font-size: 10.5pt;
+    margin: 2pt 0 0 0;
+    line-height: 1.4;
+    color: #000000;
+}
+
+/* ============================================================
+   PRINT STYLES - PDF Export Optimization
+   ============================================================ */
+
+@media print {
+    .template {
+        box-shadow: none;
+        margin: 0;
+        padding: 0.5in 0.6in;
+        width: 100%;
+        min-height: auto;
+    }
+
+    .shakra-section,
+    .ashish-section,
+    .shakra-exp-item,
+    .ashish-exp-item,
+    .shakra-project-item,
+    .ashish-project-item,
+    .shakra-edu-item,
+    .ashish-edu-item {
+        page-break-inside: avoid;
+    }
+
+    a {
+        text-decoration: none;
+        color: inherit;
+    }
+
+    * {
+        -webkit-print-color-adjust: exact !important;
+        print-color-adjust: exact !important;
+    }
+}
+
+/* ============================================================
+   SCREEN PREVIEW STYLES
+   ============================================================ */
+
+@media screen {
+    .template {
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+        margin: 20px auto;
+    }
+}

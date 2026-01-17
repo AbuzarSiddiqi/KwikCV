@@ -1,0 +1,312 @@
+.preview-page {
+    min-height: 100vh;
+    background: var(--color-bg-primary);
+    padding-bottom: 80px;
+}
+
+/* Header */
+.preview-header {
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: var(--space-3) var(--space-4);
+    background: rgba(16, 22, 34, 0.95);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--color-border);
+}
+
+.preview-header .header-left,
+.preview-header .header-right {
+    display: flex;
+    align-items: center;
+    gap: var(--space-2);
+}
+
+.preview-header .logo {
+    display: flex;
+    align-items: center;
+    gap: var(--space-2);
+    color: var(--color-text-primary);
+    text-decoration: none;
+    font-weight: var(--font-weight-bold);
+}
+
+.preview-header .btn {
+    background: transparent;
+    border: none;
+    color: var(--color-text-primary);
+    padding: var(--space-2);
+    border-radius: var(--radius-md);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: var(--space-2);
+}
+
+.preview-header .btn:hover {
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.preview-header .btn-primary {
+    background: var(--color-accent-primary);
+    color: white;
+    padding: var(--space-2) var(--space-4);
+    border-radius: var(--radius-lg);
+}
+
+.preview-header .btn-primary:hover {
+    background: var(--color-accent-secondary);
+}
+
+.header-text {
+    display: none;
+}
+
+@media (min-width: 768px) {
+    .header-text {
+        display: inline;
+    }
+}
+
+.hide-mobile {
+    display: none;
+}
+
+@media (min-width: 768px) {
+    .hide-mobile {
+        display: flex;
+    }
+}
+
+/* Layout */
+.preview-layout {
+    display: flex;
+    flex-direction: column;
+}
+
+@media (min-width: 1024px) {
+    .preview-layout {
+        flex-direction: row;
+    }
+}
+
+/* Sidebar */
+.preview-sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 300px;
+    background: var(--color-bg-secondary);
+    border-left: 1px solid var(--color-border);
+    padding: var(--space-4);
+    transform: translateX(100%);
+    transition: transform var(--transition-slow);
+    z-index: 100;
+    overflow-y: auto;
+}
+
+.preview-sidebar.show {
+    transform: translateX(0);
+}
+
+@media (min-width: 1024px) {
+    .preview-sidebar {
+        position: static;
+        transform: none;
+        flex-shrink: 0;
+    }
+}
+
+.sidebar-actions {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-3);
+    margin-top: var(--space-4);
+}
+
+.sidebar-actions .btn {
+    width: 100%;
+    justify-content: center;
+    padding: var(--space-3);
+    border-radius: var(--radius-lg);
+    font-weight: var(--font-weight-medium);
+    cursor: pointer;
+    transition: all var(--transition-fast);
+}
+
+.btn-secondary {
+    background: var(--color-bg-tertiary);
+    border: 1px solid var(--color-border);
+    color: var(--color-text-primary);
+}
+
+.btn-secondary:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+/* Main Content */
+.preview-main {
+    flex: 1;
+    padding: var(--space-4);
+    overflow-x: auto;
+}
+
+/* Zoom Controls */
+.zoom-controls {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-3);
+    margin-bottom: var(--space-4);
+}
+
+.zoom-btn {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--color-bg-secondary);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+    color: var(--color-text-primary);
+    cursor: pointer;
+    transition: all var(--transition-fast);
+}
+
+.zoom-btn:hover {
+    background: var(--color-bg-tertiary);
+}
+
+.zoom-label {
+    font-size: var(--font-size-sm);
+    color: var(--color-text-muted);
+    min-width: 50px;
+    text-align: center;
+}
+
+.ats-toggle-btn {
+    display: flex;
+    margin-left: auto;
+    gap: var(--space-1);
+    color: var(--color-accent-light);
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+@media (min-width: 1024px) {
+    .ats-toggle-btn {
+        display: none;
+    }
+}
+
+/* Preview Container */
+.preview-container {
+    display: flex;
+    justify-content: center;
+    overflow: auto;
+    padding: var(--space-4) 0;
+}
+
+/* Click-to-edit functionality */
+.clickable-preview {
+    cursor: pointer;
+    position: relative;
+}
+
+.edit-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(43, 108, 238, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-2);
+    opacity: 0;
+    transition: opacity var(--transition-base);
+    pointer-events: none;
+    color: var(--color-accent-primary);
+    font-weight: var(--font-weight-semibold);
+    font-size: var(--font-size-lg);
+    border-radius: var(--radius-lg);
+    border: 2px dashed transparent;
+}
+
+.clickable-preview:hover .edit-overlay {
+    opacity: 1;
+    border-color: var(--color-accent-primary);
+}
+
+/* Print Styles */
+@media print {
+
+    .preview-header,
+    .preview-sidebar,
+    .zoom-controls,
+    .bottom-nav,
+    .edit-overlay {
+        display: none !important;
+    }
+
+    .preview-page {
+        padding: 0;
+        background: white;
+    }
+
+    .preview-main {
+        padding: 0;
+    }
+
+    .preview-wrapper {
+        transform: none !important;
+    }
+}
+
+.print-only {
+    display: none;
+}
+
+@media print {
+    .print-only {
+        display: block;
+    }
+
+    .preview-container {
+        display: none;
+    }
+}
+
+/* PDF Container - Hidden but renders at exact PDF dimensions */
+.pdf-container {
+    position: absolute;
+    left: -9999px;
+    top: 0;
+    width: 8.5in;
+    background: white;
+}
+
+.pdf-resume-wrapper {
+    width: 8.5in;
+    min-height: 11in;
+    background: white;
+}
+
+/* Preview wrapper should match PDF dimensions */
+.preview-wrapper {
+    width: 8.5in;
+    transform-origin: top center;
+    transition: transform var(--transition-fast);
+    flex-shrink: 0;
+}
+
+/* Ensure template inside preview has no inherited centering */
+.preview-wrapper .template,
+.pdf-resume-wrapper .template {
+    text-align: left !important;
+}

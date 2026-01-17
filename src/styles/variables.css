@@ -1,0 +1,108 @@
+/* Import Manrope Font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&display=swap');
+
+:root {
+  /* Colors - New Design System (ResumeAI inspired) */
+  --color-bg-primary: #101622;
+  --color-bg-secondary: #181f2b;
+  --color-bg-tertiary: #1c212e;
+  --color-bg-card: rgba(24, 31, 43, 0.9);
+  --color-bg-glass: rgba(16, 22, 34, 0.8);
+
+  /* Primary Blue */
+  --color-accent-primary: #2b6cee;
+  --color-accent-secondary: #3b7bf5;
+  --color-accent-light: #5b9bff;
+  --color-accent-gradient: linear-gradient(135deg, #2b6cee 0%, #3b7bf5 100%);
+
+  /* Gold/Amber for Premium/ATS */
+  --color-gold: #fbbf24;
+  --color-gold-gradient: linear-gradient(135deg, #fde68a 0%, #fbbf24 50%, #d97706 100%);
+
+  /* Status Colors */
+  --color-success: #22c55e;
+  --color-success-light: #4ade80;
+  --color-warning: #f59e0b;
+  --color-warning-light: #fbbf24;
+  --color-error: #ef4444;
+  --color-error-light: #f87171;
+
+  /* Text Colors */
+  --color-text-primary: #ffffff;
+  --color-text-secondary: #e2e8f0;
+  --color-text-muted: #9da6b9;
+  --color-text-inverse: #101622;
+
+  /* Borders */
+  --color-border: rgba(255, 255, 255, 0.08);
+  --color-border-focus: rgba(43, 108, 238, 0.5);
+
+  /* Typography - Manrope */
+  --font-family: 'Manrope', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-size-xs: 0.75rem;
+  --font-size-sm: 0.875rem;
+  --font-size-base: 1rem;
+  --font-size-lg: 1.125rem;
+  --font-size-xl: 1.25rem;
+  --font-size-2xl: 1.5rem;
+  --font-size-3xl: 1.875rem;
+  --font-size-4xl: 2.25rem;
+  --font-size-5xl: 3rem;
+
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+  --font-weight-extrabold: 800;
+
+  --line-height-tight: 1.1;
+  --line-height-normal: 1.5;
+  --line-height-relaxed: 1.75;
+
+  /* Spacing */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.25rem;
+  --space-6: 1.5rem;
+  --space-8: 2rem;
+  --space-10: 2.5rem;
+  --space-12: 3rem;
+  --space-16: 4rem;
+  --space-20: 5rem;
+
+  /* Border Radius (Updated) */
+  --radius-sm: 0.375rem;
+  --radius-md: 0.5rem;
+  --radius-lg: 1rem;
+  --radius-xl: 1.5rem;
+  --radius-2xl: 2rem;
+  --radius-full: 9999px;
+
+  /* Shadows */
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.2);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.25);
+  --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.3);
+  --shadow-glow: 0 0 20px rgba(43, 108, 238, 0.25);
+  --shadow-glow-lg: 0 0 40px rgba(43, 108, 238, 0.4);
+  --shadow-primary: 0 4px 20px rgba(43, 108, 238, 0.3);
+
+  /* Transitions */
+  --transition-fast: 150ms ease;
+  --transition-base: 200ms ease;
+  --transition-slow: 300ms ease;
+  --transition-bounce: 300ms cubic-bezier(0.34, 1.56, 0.64, 1);
+
+  /* Z-index */
+  --z-dropdown: 100;
+  --z-modal: 200;
+  --z-toast: 300;
+
+  /* Container */
+  --container-max: 1200px;
+  --container-padding: var(--space-4);
+}
+
+/* Light mode removed - app is dark-only per design */
